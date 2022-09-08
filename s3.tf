@@ -1,4 +1,4 @@
-resource "aws_s2_bucket" "datalake" {
+resource "aws_s3_bucket" "datalake" {
     bucket = "${var.base_bucket_name}-${var.ambiente}-${var.numero_da_conta}"
     acl = "private"
     server_side_encryption_configuration {
